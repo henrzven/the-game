@@ -19,3 +19,80 @@ footer {
 .text-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+body {
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la viewport */
+    position: relative; /* Necesario para posicionar el pseudoelemento */
+    background-color: aliceblue;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 940px;
+    background-color: #fcad59;
+    z-index: -1;
+}
+
+p{
+
+    font-size: 20px;
+
+}
+
+.text-2{
+    text-align: center;
+    color: blueviolet;
+    position: relative;
+    font-size: 40px;
+
+}
+
+.text-3{
+
+    text-align: center;
+    color: #ff9c00;
+    font-size: 40px ;
+
+}
+
+.text-center{
+
+    color: blueviolet;
+
+}
+
+.download{
+
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(to bottom, #9228fd, #6f00bd);
+  color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.container-inscription{
+
+    background-color: #f0f0f0; /* Fondo suave */
+    border: 1px solid #7c00f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(89, 2, 159, 0.3);
+
+}
+
+.logo{
+
+    position: relative;
+    width: 68%;
+
+}
